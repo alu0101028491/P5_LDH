@@ -1,0 +1,178 @@
+\hypertarget{classpassengers_1_1_passenger}{}\doxysection{passengers.\+Passenger Class Reference}
+\label{classpassengers_1_1_passenger}\index{passengers.Passenger@{passengers.Passenger}}
+
+
+The \mbox{\hyperlink{classpassengers_1_1_passenger}{Passenger}} class allows you to manage passenger data and their respective assigned flights.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpassengers_1_1_passenger_a1c41187e6cd687470550f2fb19fa4807}{Passenger}} (String identifier, String name, String country\+Code)
+\item 
+String \mbox{\hyperlink{classpassengers_1_1_passenger_a2b0dae273544857b10791dbf2e1504fc}{get\+Identifier}} ()
+\item 
+String \mbox{\hyperlink{classpassengers_1_1_passenger_a7bdf7098e086a9c935e0a790e9e7f162}{get\+Name}} ()
+\item 
+String \mbox{\hyperlink{classpassengers_1_1_passenger_a57470a67a8a80770bf79f01cee3bb2b4}{get\+Country\+Code}} ()
+\item 
+\mbox{\hyperlink{classflights_1_1_flight}{Flight}} \mbox{\hyperlink{classpassengers_1_1_passenger_abdf442ef49984375e2235da70d136354}{get\+Flight}} ()
+\item 
+void \mbox{\hyperlink{classpassengers_1_1_passenger_ac8557f5eadcdeb546db67848c6211be3}{join\+Flight}} (\mbox{\hyperlink{classflights_1_1_flight}{Flight}} flight)
+\item 
+void \mbox{\hyperlink{classpassengers_1_1_passenger_a10d7bd9e89366473725146728a50369a}{set\+Flight}} (\mbox{\hyperlink{classflights_1_1_flight}{Flight}} flight)
+\item 
+String \mbox{\hyperlink{classpassengers_1_1_passenger_a71bd5731d795bd641b141c9720465140}{to\+String}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classpassengers_1_1_passenger}{Passenger}} class allows you to manage passenger data and their respective assigned flights. 
+
+\begin{DoxySince}{Since}
+09/12/22 
+\end{DoxySince}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpassengers_1_1_passenger_a1c41187e6cd687470550f2fb19fa4807}\label{classpassengers_1_1_passenger_a1c41187e6cd687470550f2fb19fa4807}} 
+\index{passengers.Passenger@{passengers.Passenger}!Passenger@{Passenger}}
+\index{Passenger@{Passenger}!passengers.Passenger@{passengers.Passenger}}
+\doxysubsubsection{\texorpdfstring{Passenger()}{Passenger()}}
+{\footnotesize\ttfamily passengers.\+Passenger.\+Passenger (\begin{DoxyParamCaption}\item[{String}]{identifier,  }\item[{String}]{name,  }\item[{String}]{country\+Code }\end{DoxyParamCaption})}
+
+Class constructor -\/ If an incorrect country code is passed the passenger cannot be created. 
+\begin{DoxyParams}{Parameters}
+{\em identifier} & \mbox{\hyperlink{classpassengers_1_1_passenger}{Passenger}} identifier \\
+\hline
+{\em name} & \mbox{\hyperlink{classpassengers_1_1_passenger}{Passenger}} name \\
+\hline
+{\em country\+Code} & \mbox{\hyperlink{classpassengers_1_1_passenger}{Passenger}} country code \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpassengers_1_1_passenger_a57470a67a8a80770bf79f01cee3bb2b4}\label{classpassengers_1_1_passenger_a57470a67a8a80770bf79f01cee3bb2b4}} 
+\index{passengers.Passenger@{passengers.Passenger}!getCountryCode@{getCountryCode}}
+\index{getCountryCode@{getCountryCode}!passengers.Passenger@{passengers.Passenger}}
+\doxysubsubsection{\texorpdfstring{getCountryCode()}{getCountryCode()}}
+{\footnotesize\ttfamily String passengers.\+Passenger.\+get\+Country\+Code (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Method to return passenger\textquotesingle{}s country code \begin{DoxyReturn}{Returns}
+passenger\textquotesingle{}s country code 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classpassengers_1_1_passenger_a57470a67a8a80770bf79f01cee3bb2b4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classpassengers_1_1_passenger_abdf442ef49984375e2235da70d136354}\label{classpassengers_1_1_passenger_abdf442ef49984375e2235da70d136354}} 
+\index{passengers.Passenger@{passengers.Passenger}!getFlight@{getFlight}}
+\index{getFlight@{getFlight}!passengers.Passenger@{passengers.Passenger}}
+\doxysubsubsection{\texorpdfstring{getFlight()}{getFlight()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classflights_1_1_flight}{Flight}} passengers.\+Passenger.\+get\+Flight (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Method to return passenger\textquotesingle{}s flight \begin{DoxyReturn}{Returns}
+passenger\textquotesingle{}s flight 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classpassengers_1_1_passenger_a2b0dae273544857b10791dbf2e1504fc}\label{classpassengers_1_1_passenger_a2b0dae273544857b10791dbf2e1504fc}} 
+\index{passengers.Passenger@{passengers.Passenger}!getIdentifier@{getIdentifier}}
+\index{getIdentifier@{getIdentifier}!passengers.Passenger@{passengers.Passenger}}
+\doxysubsubsection{\texorpdfstring{getIdentifier()}{getIdentifier()}}
+{\footnotesize\ttfamily String passengers.\+Passenger.\+get\+Identifier (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Method to return passenger\textquotesingle{}s identifier \begin{DoxyReturn}{Returns}
+passenger\textquotesingle{}s identifier 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classpassengers_1_1_passenger_a2b0dae273544857b10791dbf2e1504fc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classpassengers_1_1_passenger_a7bdf7098e086a9c935e0a790e9e7f162}\label{classpassengers_1_1_passenger_a7bdf7098e086a9c935e0a790e9e7f162}} 
+\index{passengers.Passenger@{passengers.Passenger}!getName@{getName}}
+\index{getName@{getName}!passengers.Passenger@{passengers.Passenger}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily String passengers.\+Passenger.\+get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Method to return passenger\textquotesingle{}s name \begin{DoxyReturn}{Returns}
+passenger\textquotesingle{}s name 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classpassengers_1_1_passenger_a7bdf7098e086a9c935e0a790e9e7f162_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classpassengers_1_1_passenger_ac8557f5eadcdeb546db67848c6211be3}\label{classpassengers_1_1_passenger_ac8557f5eadcdeb546db67848c6211be3}} 
+\index{passengers.Passenger@{passengers.Passenger}!joinFlight@{joinFlight}}
+\index{joinFlight@{joinFlight}!passengers.Passenger@{passengers.Passenger}}
+\doxysubsubsection{\texorpdfstring{joinFlight()}{joinFlight()}}
+{\footnotesize\ttfamily void passengers.\+Passenger.\+join\+Flight (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classflights_1_1_flight}{Flight}}}]{flight }\end{DoxyParamCaption})}
+
+Method to change the assigned flight of a passenger. Returns an error if the passenger is not on any flight as well as if no valid flight is used for the assignment. 
+\begin{DoxyParams}{Parameters}
+{\em flight} & Flight to which the passenger will be assigned \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classpassengers_1_1_passenger_ac8557f5eadcdeb546db67848c6211be3_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classpassengers_1_1_passenger_a10d7bd9e89366473725146728a50369a}\label{classpassengers_1_1_passenger_a10d7bd9e89366473725146728a50369a}} 
+\index{passengers.Passenger@{passengers.Passenger}!setFlight@{setFlight}}
+\index{setFlight@{setFlight}!passengers.Passenger@{passengers.Passenger}}
+\doxysubsubsection{\texorpdfstring{setFlight()}{setFlight()}}
+{\footnotesize\ttfamily void passengers.\+Passenger.\+set\+Flight (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classflights_1_1_flight}{Flight}}}]{flight }\end{DoxyParamCaption})}
+
+Method that sets the passenger\textquotesingle{}s current flight by changing its previous value. 
+\begin{DoxyParams}{Parameters}
+{\em flight} & New passenger\textquotesingle{}s flight \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classpassengers_1_1_passenger_a10d7bd9e89366473725146728a50369a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classpassengers_1_1_passenger_a71bd5731d795bd641b141c9720465140}\label{classpassengers_1_1_passenger_a71bd5731d795bd641b141c9720465140}} 
+\index{passengers.Passenger@{passengers.Passenger}!toString@{toString}}
+\index{toString@{toString}!passengers.Passenger@{passengers.Passenger}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily String passengers.\+Passenger.\+to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the passenger\textquotesingle{}s information in String format \begin{DoxyReturn}{Returns}
+passenger\textquotesingle{}s information in String format 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classpassengers_1_1_passenger_a71bd5731d795bd641b141c9720465140_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/passengers/\mbox{\hyperlink{_passenger_8java}{Passenger.\+java}}\end{DoxyCompactItemize}
