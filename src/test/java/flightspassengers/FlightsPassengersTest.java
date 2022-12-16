@@ -10,6 +10,11 @@ import org.junit.jupiter.api.RepeatedTest;
 import org.junit.jupiter.api.RepetitionInfo;
 import static org.junit.jupiter.api.Assertions.*;
 
+/**
+ *  Tests to verify correct operation of connections between Flight and Passenger classes
+ *  @since 16/12/22
+ *  @version 1.0
+ */
 public class FlightsPassengersTest {
 
     private Flight flight;
@@ -28,7 +33,7 @@ public class FlightsPassengersTest {
 
         @Test
         @DisplayName("We can add passengers to a flight")
-        public void addPassengerTest() {
+        void addPassengerTest() {
             assertAll("Checking that we can add passengers to a flight",
                     () -> assertEquals(0, flight.getNumberOfPassengers()),
                     () -> assertTrue(flight.addPassenger(firstPassenger)),
@@ -40,7 +45,7 @@ public class FlightsPassengersTest {
 
         @Test
         @DisplayName("We can remove passengers from a flight")
-        public void removePassengerTest() {
+        void removePassengerTest() {
             assertAll("Checking that we can remove passengers from a flight",
                     () -> assertTrue(flight.addPassenger(firstPassenger)),
                     () -> assertTrue(flight.addPassenger(secondPassenger)),
@@ -54,7 +59,7 @@ public class FlightsPassengersTest {
 
         @RepeatedTest(3)
         @DisplayName("We can only add each passenger once within a flight.")
-        public void addSamePassengerTest(RepetitionInfo repetitionInfo) {
+        void addSamePassengerTest(RepetitionInfo repetitionInfo) {
             for (int i = 0; i < repetitionInfo.getCurrentRepetition(); i++)
                 flight.addPassenger(firstPassenger);
 
@@ -65,7 +70,7 @@ public class FlightsPassengersTest {
 
         @Test
         @DisplayName("We cannot exceed the number of seats")
-        public void exceedSeatsTest() {
+        void exceedSeatsTest() {
 
             String expectedMessage = "Not enough seats for flight AB340";
             flight.addPassenger(firstPassenger);
@@ -84,7 +89,7 @@ public class FlightsPassengersTest {
 
         @Test
         @DisplayName("We can see the flight to which a passenger is assigned.")
-        public void passengerFlightTest() {
+        void passengerFlightTest() {
             assertAll("Checking that we can see the flight to which a passenger is assigned.",
                     () -> assertTrue(flight.addPassenger(firstPassenger)),
                     () -> assertEquals(flight, firstPassenger.getFlight())
@@ -93,7 +98,7 @@ public class FlightsPassengersTest {
 
         @Test
         @DisplayName("We can change the passenger's flight")
-        public void testPassengerChangeFlight() {
+        void testPassengerChangeFlight() {
             Flight auxFlight = new Flight("JF445", 20);
             firstPassenger.joinFlight(flight);
 

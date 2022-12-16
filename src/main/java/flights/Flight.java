@@ -27,7 +27,7 @@ import java.util.regex.Pattern;
 import passengers.Passenger;
 
 /**
- *  @brief The Flight class allows you to manage flight data and their respective assigned passengers.
+ *  The Flight class allows you to manage flight data and their respective assigned passengers.
  *  @since 09/12/22
  *  @version 1.0
  */

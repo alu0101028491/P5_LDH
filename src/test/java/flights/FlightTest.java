@@ -6,6 +6,11 @@ import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
+/**
+ *  Tests to check the methods and attributes of the Flight class
+ *  @since 16/12/22
+ *  @version 1.0
+ */
 class FlightTest {
 
     private Flight flight;
@@ -21,7 +26,7 @@ class FlightTest {
 
         @Test
         @DisplayName("Flight attributes are checked")
-        public void flightAttributesTest() {
+        void flightAttributesTest() {
             assertAll("Checking that the attributes are properly initialized",
                     () -> assertEquals("AB340", flight.getFlightNumber()),
                     () -> assertEquals(0, flight.getNumberOfPassengers())

@@ -6,6 +6,11 @@ import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
+/**
+ *  Tests to check the methods and attributes of the Passenger class
+ *  @since 16/12/22
+ *  @version 1.0
+ */
 class PassengerTest {
 
     private Passenger passenger;
@@ -21,7 +26,7 @@ class PassengerTest {
 
         @Test
         @DisplayName("Passenger attributes are checked")
-        public void passengerAttributesTest() {
+        void passengerAttributesTest() {
             assertAll("Checking that the attributes are properly initialized",
                     () -> assertEquals("01", passenger.getIdentifier()),
                     () -> assertEquals("Samir", passenger.getName()),

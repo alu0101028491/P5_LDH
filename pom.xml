@@ -98,7 +98,7 @@
                     <additionalOptions>
                         <additionalOption>-Xdoclint:none</additionalOption>
                     </additionalOptions>
-                    <sourcepath>${basedir}/src/main/java</sourcepath>
+                    <sourcepath>${basedir}/src</sourcepath>
                 </configuration>
             </plugin>
 
